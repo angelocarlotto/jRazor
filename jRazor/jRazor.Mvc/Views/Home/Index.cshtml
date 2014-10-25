@@ -4,8 +4,13 @@
     Button button;
     InputText txt;
 
+
+
     System.Linq.Expressions.Expression<Func<int, int>> fn = x => x * x;
+    var visitor = new JsExpressionVisitor();
+    visitor.Visit(fn);
 }
+@visitor.JavaScriptCode
 
 @using (divAux = Html.Div())
 {

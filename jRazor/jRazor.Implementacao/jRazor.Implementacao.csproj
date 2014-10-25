@@ -73,6 +73,7 @@
     <Compile Include="Base\JQueryBase.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="Div.cs" />
+    <Compile Include="ExpressionAction.cs" />
     <Compile Include="ExtesionHTML.cs" />
     <Compile Include="InputText.cs" />
     <Compile Include="JAjax.cs" />

@@ -1,5 +1,8 @@
 ﻿using jRazor.Infraestrutura;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Web.Mvc;
 
 namespace jRazor.Implementacao
@@ -13,6 +16,11 @@ namespace jRazor.Implementacao
 
         public IJavaScript JavaScript { get; set; }
 
+        public static void each<T>(IList<T> collection, Expression<Action<int, T>> callBack)
+        {
+
+            collection.ToList().ForEach(el => callBack.Compile().Invoke(collection.IndexOf(el), el));
+        }
         public IJAjax Ajax(FormMethod method)
         {
             return new JAjax(this, method);

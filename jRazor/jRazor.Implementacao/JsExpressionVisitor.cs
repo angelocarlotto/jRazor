@@ -23,13 +23,15 @@ namespace jRazor.Implementacao
             _builder.Clear();
             return base.Visit(node);
         }
-
+        public string fnName { get; set; }
         protected override Expression VisitParameter(ParameterExpression node)
         {
+            fnName = node.Name;
             _builder.Append(node.Name);
             base.VisitParameter(node);
             return node;
         }
+        
 
         protected override Expression VisitBinary(BinaryExpression node)
         {
@@ -41,7 +43,7 @@ namespace jRazor.Implementacao
 
         protected override Expression VisitLambda<T>(Expression<T> node)
         {
-            _builder.Append("function(");
+            _builder.Append("function (");
             for (int i = 0; i < node.Parameters.Count; i++)
             {
                 if (i > 0)
