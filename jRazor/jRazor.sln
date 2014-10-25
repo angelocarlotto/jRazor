@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jRazor.Infraestrutura", "jRazor.Infraestrutura\jRazor.Infraestrutura.csproj", "{AF3E92B7-3C82-4409-8965-82FFBACC946F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jRazor.Implementacao", "jRazor.Implementacao\jRazor.Implementacao.csproj", "{901C9894-13D8-41B5-8369-10839923698E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jRazor.Mvc", "jRazor.Mvc\jRazor.Mvc.csproj", "{B211E973-BEF2-4724-9C28-19A727B7E927}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF3E92B7-3C82-4409-8965-82FFBACC946F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF3E92B7-3C82-4409-8965-82FFBACC946F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF3E92B7-3C82-4409-8965-82FFBACC946F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF3E92B7-3C82-4409-8965-82FFBACC946F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901C9894-13D8-41B5-8369-10839923698E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901C9894-13D8-41B5-8369-10839923698E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901C9894-13D8-41B5-8369-10839923698E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901C9894-13D8-41B5-8369-10839923698E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B211E973-BEF2-4724-9C28-19A727B7E927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B211E973-BEF2-4724-9C28-19A727B7E927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B211E973-BEF2-4724-9C28-19A727B7E927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B211E973-BEF2-4724-9C28-19A727B7E927}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
