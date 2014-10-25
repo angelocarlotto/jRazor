@@ -1,13 +1,8 @@
 ﻿using jRazor.Infraestrutura;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace jRazor.Implementacao
 {
-
     public class JAjax : JQueryBase, IJAjax
     {
         private FormMethod method;
@@ -40,6 +35,4 @@ namespace jRazor.Implementacao
             Jquery.JavaScript.JavaScriptQuery.AppendLine(string.Format("$('{0}').load('{1}',{2})", selectorTarget, url, param.ToString().Replace("=", ":")));
         }
     }
-
-   
 }

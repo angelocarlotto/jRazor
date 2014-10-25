@@ -1,11 +1,8 @@
 ﻿using jRazor.Infraestrutura;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using System.Web;
 using System.Web.Mvc;
 
 namespace jRazor.Implementacao
@@ -26,6 +23,7 @@ namespace jRazor.Implementacao
         }
 
         public StringBuilder JavaScriptQuery { get; set; }
+
         public void Alert(string msg)
         {
             JavaScriptQuery.AppendLine(string.Format("alert('{0}');", msg));
@@ -55,5 +53,4 @@ namespace jRazor.Implementacao
             return JavaScriptQuery.ToString();
         }
     }
-
 }

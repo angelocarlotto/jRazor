@@ -1,8 +1,4 @@
 ﻿using jRazor.Infraestrutura;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace jRazor.Implementacao
@@ -48,6 +44,7 @@ namespace jRazor.Implementacao
         {
             return new JavaScript(html);
         }
+
         public static IJQuery Jquery(this IJavaScript jq)
         {
             return (IJQuery)new JQuery(jq);
@@ -63,5 +60,4 @@ namespace jRazor.Implementacao
             return html;
         }
     }
-
 }

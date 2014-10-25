@@ -1,11 +1,9 @@
 ﻿using jRazor.Infraestrutura;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
-namespace jRazor.Implementacao{
+namespace jRazor.Implementacao
+{
     public class JQuery : IJQuery
     {
         public JQuery(IJavaScript js)
@@ -14,6 +12,7 @@ namespace jRazor.Implementacao{
         }
 
         public IJavaScript JavaScript { get; set; }
+
         public IJAjax Ajax(FormMethod method)
         {
             return new JAjax(this, method);
@@ -34,10 +33,10 @@ namespace jRazor.Implementacao{
         {
             return new JqueryReady(this);
         }
+
         public object Val(object obj = null)
         {
             throw new NotImplementedException();
         }
     }
-
 }

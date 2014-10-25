@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web;
+﻿using System.Text;
 using System.Web.Mvc;
 
 namespace jRazor.Implementacao
@@ -35,5 +31,4 @@ namespace jRazor.Implementacao
             return string.Format("$(\"{0}\").val()", IDSelector);
         }
     }
-
 }

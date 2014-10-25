@@ -1,7 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Linq.Expressions;
-using System.Text;
 
 namespace jRazor.Infraestrutura
 {
@@ -11,5 +8,4 @@ namespace jRazor.Infraestrutura
 
         void Load(string selectorTarget, string url, object param);
     }
-
 }

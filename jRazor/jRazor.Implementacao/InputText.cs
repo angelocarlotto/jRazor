@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Web;
 using System.Web.Mvc;
 
 namespace jRazor.Implementacao
 {
-    
     public class InputText : HtmlComponentBase, IDisposable
     {
         public InputText(HtmlHelper html)
@@ -45,6 +41,7 @@ namespace jRazor.Implementacao
         public void OnChange<T>(Expression<Action<T>> delegatew)
         {
         }
+
         public InputText Value(object value = null)
         {
             if (value != null)
@@ -54,5 +51,4 @@ namespace jRazor.Implementacao
             return this;
         }
     }
-
 }

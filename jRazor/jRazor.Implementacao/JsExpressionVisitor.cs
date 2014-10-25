@@ -1,8 +1,6 @@
 ﻿using System;
-using System.IO;
 using System.Linq.Expressions;
 using System.Text;
-using System.Web.Mvc;
 
 namespace jRazor.Implementacao
 {
@@ -66,16 +64,22 @@ namespace jRazor.Implementacao
             {
                 case ExpressionType.Add:
                     return " + ";
+
                 case ExpressionType.Multiply:
                     return " * ";
+
                 case ExpressionType.Subtract:
                     return " - ";
+
                 case ExpressionType.Divide:
                     return " / ";
+
                 case ExpressionType.Assign:
                     return " = ";
+
                 case ExpressionType.Equal:
                     return " == ";
+
                 case ExpressionType.NotEqual:
                     return " != ";
 
