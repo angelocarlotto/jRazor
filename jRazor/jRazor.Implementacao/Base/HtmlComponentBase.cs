@@ -5,7 +5,7 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApplication4.Jquery.NET
+namespace jRazor.Implementacao
 {
     public abstract class HtmlComponentBase
     {

@@ -1,7 +1,30 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@{
+
+    Div divAux;
+    Button button;
+    InputText txt;
+
+    System.Linq.Expressions.Expression<Func<int, int>> fn = x => x * x;
 }
 
-<h2>Index</h2>
+@using (divAux = Html.Div())
+{
 
+}
+@using (txt = Html.InputText().Value(4444))
+{
+    txt.Change("alert($(this).val());");
+}
+
+@using (var js = Html.JavaScript())
+{
+    js.AddFunction("fn", fn);
+    using (var jq = js.Jquery().Ready())
+    {
+        jq.Ajax(FormMethod.Post).Load(divAux.NameSelector, Url.Content("~/Home/Teste"), new { id = txt.Val() });
+    }
+}
+@using (button = Html.Button().Value("Evento click"))
+{
+    button.Click(string.Format("alert({0});", string.Format("fn({0})", txt.Val())));
+}

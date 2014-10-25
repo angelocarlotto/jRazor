@@ -1,9 +1,10 @@
-﻿using System;
+﻿using jRazor.Infraestrutura;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebApplication4.Jquery.NET
+namespace jRazor.Implementacao
 {
     public abstract class JQueryBase : IJqueryBase
     {

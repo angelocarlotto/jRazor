@@ -1,4 +1,5 @@
-﻿using System;
+﻿using jRazor.Infraestrutura;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApplication4.Jquery.NET
+namespace jRazor.Implementacao
 {
     public class JavaScript : IJavaScript
     {

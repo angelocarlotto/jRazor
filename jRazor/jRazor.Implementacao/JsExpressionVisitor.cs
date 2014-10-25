@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Web.Mvc;
 
-namespace WebApplication4
+namespace jRazor.Implementacao
 {
     public class JsExpressionVisitor : ExpressionVisitor
     {

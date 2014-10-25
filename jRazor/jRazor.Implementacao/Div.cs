@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApplication4.Jquery.NET
+namespace jRazor.Implementacao
 {
     public class Div : HtmlComponentBase, IDisposable
     {

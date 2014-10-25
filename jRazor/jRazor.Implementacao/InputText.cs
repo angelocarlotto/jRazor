@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApplication4.Jquery.NET
+namespace jRazor.Implementacao
 {
     
     public class InputText : HtmlComponentBase, IDisposable

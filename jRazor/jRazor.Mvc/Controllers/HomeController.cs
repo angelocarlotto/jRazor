@@ -13,5 +13,10 @@ namespace jRazor.Mvc.Controllers
         {
             return View();
         }
+
+        public JsonResult Teste(int? id)
+        {
+            return Json(id, JsonRequestBehavior.AllowGet);
+        }
     }
 }
